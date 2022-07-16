@@ -26,6 +26,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@400;700&family=Tangerine:wght@400;700&display=swap"
     rel="stylesheet">
+  
+    <!-- fonts awosome -->
+    <script src="https://kit.fontawesome.com/710c814132.js" crossorigin="anonymous"></script>
 
   <!-- bootstrap css -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -41,13 +44,12 @@
 
 <body>
 
-
   <!-- ======= Header ======= -->
-  <Header id="header" class="fixed-top d-flex align-items-center header-transparent">
-    <div class="container container-xl d-flex align-items-center justify-content-between">
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <div class="logo me-auto">
-        <!-- <h1><a href="index.html">Fable</a></h1> -->
+        <!-- <h1><a href="index.html">Delicious</a></h1> -->
         <!-- Uncomment below if you prefer to use an image logo -->
         <a href="index.html"><img src="img/logo.png" alt="" class="img-fluid"></a>
       </div>
@@ -60,42 +62,146 @@
           <li><a class="nav-link scrollto" href="#specials">RESERVATIONS</a></li>
           <li><a class="nav-link scrollto" href="#events">GALLERY</a></li>
           <li><a class="nav-link scrollto" href="#chefs">CONTACT</a></li>
-          <li><a class="nav-link scrollto" href="#gallery">
-              <div class="vr"></div>
-            </a></li>
+          <li><a class="nav-link scrollto" href="#gallery"><div class="vr"></div></a></li>
           <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-              <ul>
-                <li><a href="#">Drop Down 1</a></li>
-                <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Drop Down 1</a></li>
-                    <li><a href="#">Deep Drop Down 2</a></li>
-                    <li><a href="#">Deep Drop Down 3</a></li>
-                    <li><a href="#">Deep Drop Down 4</a></li>
-                    <li><a href="#">Deep Drop Down 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Drop Down 2</a></li>
-                <li><a href="#">Drop Down 3</a></li>
-                <li><a href="#">Drop Down 4</a></li>
-              </ul>
-            </li> -->
-          <li><a class="nav-link scrollto" href="#"><i class="icofont-twitter"></i></a></li>
-          <li><a class="nav-link scrollto" href="#"><i class="icofont-facebook"></i></a></li>
-          <li><a class="nav-link scrollto" href="#"><i class="icofont-instagram"></i></li>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li> -->
+          <li><a class="nav-link scrollto" href="#contact"><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li><a class="nav-link scrollto" href="#contact"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a class="nav-link scrollto" href="#contact"><i class="fa-brands fa-instagram"></i></a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav> <!-- .navbar -->
+      </nav><!-- .navbar -->
 
       <a href="#book-a-table" class="book-a-table-btn scrollto">BOOK A TABLE</a>
 
     </div>
-  </Header> <!-- End Header -->
-
+  </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background-image: url(img/rs2.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <img src="img/logo2.png" class="img-fluid" alt="">
+                <h2 class="animate__animated animate__fadeInDown">FRENCH CUISINE
+                </h2>
+                <p class="animate__animated animate__fadeInUp">We're Known for Great French Cooking
+                </p>
+                <div>
+                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">DISCOVER STORY</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background-image: url(img/rs1.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <img src="img/logo2.png" class="img-fluid" alt="">
+                <h2 class="animate__animated animate__fadeInDown">AWARDED CHEFS</h2>
+                <p class="animate__animated animate__fadeInUp">We're Known for Great French Cooking</p>
+                <div>
+                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">MEET CHEFS</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background-image: url(img/rs3.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <img src="img/logo2.png" class="img-fluid" alt="">
+                <h2 class="animate__animated animate__fadeInDown">FRESH INGREDIENTS</h2>
+                <p class="animate__animated animate__fadeInUp">We're Known for Great French Cooking</p>
+                <div>
+                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">THE INGREDIENTS</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
 
 
+    <!-- ======= Discover ======= -->
+    <section id="discover" class="discover">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+
+            <div class="our-history text-center">
+              <span>Discover</span>
+              <h2>OUR STORY</h2>
+              <p>Curabitur quas nets lacus ets nulat iaculis loremis etis nisle varius vitae seditum fugiatum ligula aliquam qui sequi. Lorem ipsum dolor sit amet, consectetur adipiscing elit rutrum eleif arcu sit aspernatur nets fugit, sed quia.</p>
+              <a href="#" class="common-btn md-mb-4">OUR RECEIPES</a>
+            </div>
+
+          </div>
+          <div class="col-lg-6">
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active imags-wrapper">
+                  <img src="img/food3.jpg" class="d-block w-100 img-fluid food-images" alt="food2">
+                </div>
+                <div class="carousel-item imags-wrapper">
+                  <img src="img/food2.jpg"  class="d-block w-100 img-fluid food-images" alt="food2">
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======= images secation ======= -->
+    <section id="images-secation" class="images-secation">
+      
+    </section>
 
 
 
