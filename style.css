@@ -587,5 +587,46 @@ section {
 
 
 /*--------------------------------------------------------------
-  # Discover
+  # images secation
   --------------------------------------------------------------*/
+.images-secation {
+    background-image: url(img/bg4.jpg);
+    width: 100%;
+    background-position: center center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0 auto;
+    padding: 130px 0px;
+}
+.coming-text {
+    font-family: 'Tangerine', cursive;
+    font-size: 80px;
+    line-height: 60px;
+    color: #F2B410;
+    text-align: center;
+}
+.secation-title {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 42px;
+    /* margin: 0 0 30px 0; */
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.image-overlay {
+    background: rgba(34, 34, 34, 0.40);
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.image-section-inside {
+    position: relative;
+    z-index: 100;
+}
