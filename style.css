@@ -600,6 +600,7 @@ section {
     margin: 0 auto;
     padding: 130px 0px;
 }
+
 .coming-text {
     font-family: 'Tangerine', cursive;
     font-size: 80px;
@@ -607,6 +608,7 @@ section {
     color: #F2B410;
     text-align: center;
 }
+
 .secation-title {
     font-family: 'Montserrat', sans-serif;
     color: #fff;
@@ -617,6 +619,7 @@ section {
     font-weight: 700;
     letter-spacing: 2px;
 }
+
 .image-overlay {
     background: rgba(34, 34, 34, 0.40);
     position: absolute;
@@ -626,7 +629,111 @@ section {
     bottom: 0;
     right: 0;
 }
+
 .image-section-inside {
     position: relative;
     z-index: 100;
+}
+
+
+/*--------------------------------------------------------------
+  # Best Recipes
+  --------------------------------------------------------------*/
+.Best-recipes {
+    width: 100%;
+    position: relative;
+    background: url(img/bg8.jpg) 50% 0 no-repeat fixed;
+    background-size: cover;
+    color: white;
+    margin: 0 auto;
+    padding: 120px 0px;
+}
+
+.Best-recipes .best-title span {
+    font-size: 80px;
+    font-family: 'Tangerine', cursive;
+    line-height: 60px;
+    color: #F2B410;
+    text-align: center;
+}
+
+.Best-recipes .best-title h3 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 2px;
+    margin: 0 0 30px 0;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu-content {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-content::after {
+    content: "..............""............"".............";
+    position: absolute;
+    left: 155px;
+    right: 0;
+    top: -2px;
+    z-index: 1;
+    color: #fff;
+}
+
+.menu-content a {
+    padding-right: 15px;
+    position: relative;
+    z-index: 3;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    transition: 0.3s;
+}
+
+.menu-content span {
+    position: relative;
+    z-index: 3;
+    font-size: 18px;
+    padding: 0 10px;
+    font-weight: 700;
+    color: #F2B410;
+    padding: 0 10px;
+}
+.menu-deaitls {
+    color: #eee;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 35px;
+    margin-top: 15px;
+}
+.full-menu {
+    margin-top: 20px;
+    text-align: center;
+}
+.full-menu a i {
+    font-size: 18px;
+    margin-right: 10px;
+    color: #f8bf2c;
+}
+.full-menu a {
+    color: white;
+    background-color: transparent;
+    border: 1px solid #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding: 16px 32px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    transition: all 0.25s ease-in-out;
+}
+.full-menu a:hover {
+    color: #F2B410;
+    background-color: #fff;
+    border-color: white;
 }
