@@ -26,6 +26,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@400;700&family=Tangerine:wght@400;700&display=swap"
     rel="stylesheet">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
   <!-- fonts awosome -->
   <script src="https://kit.fontawesome.com/ec6584ee5b.js" crossorigin="anonymous"></script>
@@ -426,6 +428,51 @@
     </div>
   </section>
 
+  <!-- Gallary -->
+  <section class="Gallery">
+    <div class="container-fluid">
+      <div class="latest-news-title text-center">
+        <span>Chef's Pick</span>
+        <h2>COOKING RECIPES</h2>
+      </div>
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/food0.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/food2 (1).jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/food3 (1).jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/food5 (1).jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/food4 (1).jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/food6.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/food08.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/food09.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/food10.jpg" />
+          </div>
+        </div>
+        <!-- <div class="swiper-pagination"></div> -->
+      </div>
+
+
+    </div>
+  </section>
+
 
   <!-- ======= footers secation ======= -->
   <section id="footers" class="footers">
@@ -530,9 +577,10 @@
           <div class="col-md-6">
             <div class="footer-social">
               <p>Follow Us:</p>
-             <a href="https://twitter.com/bikromroy2001" target="_blank"> <i class="fa-brands fa-twitter"></i></a>
-             <a href="https://www.facebook.com/bikromroy01" target="_blank"> <i class="fa-brands fa-facebook"></i></a>
-             <a href="https://www.linkedin.com/in/bikrom-roy/" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://twitter.com/bikromroy2001" target="_blank"> <i class="fa-brands fa-twitter"></i></a>
+              <a href="https://www.facebook.com/bikromroy01" target="_blank"> <i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.linkedin.com/in/bikrom-roy/" target="_blank"> <i
+                  class="fa-brands fa-linkedin"></i></a>
               <a href="https://www.youtube.com/c/BikromRoy" target="_blank"><i class="fa-brands fa-youtube"></i></a>
             </div>
           </div>
@@ -551,6 +599,30 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      // centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
